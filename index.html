@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./person.js"></script>
+    <script defer src="./tennisGame.js"></script>
+    <script defer src="./tennisPlayer.js"></script>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <div>
+
+    </div>
+        <h2>Tennis Game</h2>
+        <form method="GET">
+            <label>Full Name:</label><br>
+            <input name="fullName" id="fullName" value="" >
+            <input type="button" value="Submit" onclick="createPerson()">
+        </form>
+    </div>
+    <div>
+        <h2>Display Name</h2>
+        <p style="font-weight: 600;">First Name: </p>
+        <p id="displayFirstName"></p>
+        <p style="font-weight: 600;">Last Name: </p>
+        <p id="displayLastName"> </p>
+    </div>
+    <div>
+        <h2>Player 1 or Player 2?</h2>
+        <p>Press the button to determine Winner!</p>
+        <form method="GET">
+            <input type="button" value="Generate" onclick="gameWinner()">
+        </form>
+        <p>Player 1's Score: </p>
+        <p id="displayP1Score"></p>
+        <p>Player 2's Score:</p>
+        <p id="displayP2Score"></p>
+        <p id="displayWinner" style="font-weight: 600; color: green;"></p>
+    </div>
+    <div>
+        <h2>Tennis Player Stats</h2>
+        <form method="GET">
+            <input type="button" name="Calculate" value="Calculate" id="" onclick="playerOneStats() + playerTwoStats()">
+        </form>
+        <p id="playerOneStats" style="font-weight: 600;">Player 1 Stats</p>
+        <p>Ranking: </p>
+        <p>Sets Won: </p> <p id="p1SetsWon"></p>
+        <p>Games Won: </p>  <p id="p1GameWon"></p>
+
+        <p id="playerTwoStats" style="font-weight: 600;">Player 2 Stats:</p>
+        <p>Ranking: </p>
+        <p>Sets Won: </p> <p id="p2SetsWon"></p>
+        <p>Games Won: </p> <p id="p2GameWon"></p>
+    </div>
+</body>
+</html>
